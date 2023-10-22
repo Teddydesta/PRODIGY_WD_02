@@ -1,4 +1,5 @@
 import React from 'react'
+import {VscArrowRight} from 'react-icons/vsc'
 import { Link, Router } from 'react-router-dom'
 const LandingPage = () => {
   return (
@@ -22,10 +23,10 @@ const LandingPage = () => {
         </div>
 
         <div className='h-12 w-1/2 hover:from-pink-500 hover:to-yellow-500 cursor-pointer mt-20
-          text-center  text-gray-900 font-bold    items-center mx-auto  
+           items-center mx-auto  
           bg-gradient-to-r from-indigo-500 to-sky-500 border-blue-300  border-2 rounded-full'>
-        <Link to="/stopwatch" className="text-center text-2xl">
-                    Set  Timer
+        <Link to="/stopwatch" className="text-center font-bold text-2xl w-full">
+                   <h3>NEXT</h3>
 
         </Link>
         </div>
