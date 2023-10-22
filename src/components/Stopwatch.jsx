@@ -1,4 +1,5 @@
 import { useState ,useEffect} from 'react'
+import { Link } from 'react-router-dom'
  import './timer.css'
 
 function StopWatch() {
@@ -39,15 +40,27 @@ const reset=()=>{
   console.log("Time reseted!")
 }
   return (
-  <section id='stopwatch'>
+
     
-    <div className="mx-auto  sticky top-10 w-1/3   flex flex-col bg-gradient-to-r from-sky-500 to-indigo-500
-  pt-20 pb-20 mt-20 shadow-md boreder-2 border-white-900 rounded-lg  text-white ">
+    <div className="mx-auto  m-5  pt-4   w-1/3  pb-20
+    flex flex-col bg-gradient-to-r from-sky-500 to-indigo-500
+    shadow-md boreder-2 border-white-900 
+  rounded-lg  text-white   ">
+    <div className='m-10  h-12  border-2 border-blue-300 sm:items-center 
+    hover:from-pink-500 hover:to-yellow-500
+     w-1/4 rounded-full text-center font-bold bg-gradient-to-r from-sky-500 to-indigo-500'>
+      <Link to="/">
+      <button className=' font-bold text-2xl'>Back</button>
+      </Link>
+      </div>
       <center><button 
      
-      className='p-4 text-4xl sm:text-3xl border-2 mx-auto bg-gradient-to-r from-sky-500 to-indigo-500  rounded-lg border-blue-300 sm:w-1/2 '>ANOMODORO
+      className='p-4  text-4xl sm:text-3xl border-2 mx-auto
+       bg-gradient-to-r from-sky-500 to-indigo-500  
+       rounded-lg border-blue-300 sm:mx-auto '>ANOMODORO
        </button></center>
-      <div className='p-10  mt-40 border-2  justify-center border-2  bg-blue-950 border-gray-600 text-center mx-auto   rounded-lg '>
+      <div className='p-10  mt-20 border-2  justify-center
+       border-2  bg-blue-950 border-gray-600 text-center mx-auto   rounded-lg '>
         <p className=' text-4xl font-bold  '>
           {hours}:{minutes.toString().padStart(2,"0")}:
           {sec.toString().padStart(2,"0")}:
@@ -59,15 +72,19 @@ const reset=()=>{
        
       </div>
       
-      <div className="ml-30 mt-20  pb-10  mx-auto sm:flex-col   sm:items-center" >
+      <div className="  gap-4 mx-auto  mt-20  sm:pl-20  " >
   
         <button
-         className="p-4 mr-10 w-10 border-2 sm:mb-10 rounded-md   bg-gradient-to-r from-sky-500 to-indigo-500 border-blue-300 w-48 font-bold text-3xl hover:bg-violet-950"  
+         className=" p-2 border-2 rounded-md
+         bg-gradient-to-r from-sky-500 to-indigo-500 
+         border-blue-300 w-48 font-bold text-3xl hover:from-pink-500 hover:to-yellow-500 sm:mb-4 mr-4"  
          onClick={startStop}>
           {isActive ? "Stop": "Start"}
         </button>
         <button
-        className='p-4 w-10 border-2 rounded-md    bg-gradient-to-r from-sky-500 to-indigo-500 border-blue-300 w-48 font-bold text-3xl hover:bg-gray-900'
+        className=' p-2 border-2 rounded-md
+            bg-gradient-to-r from-sky-500 to-indigo-500 
+            border-blue-300 w-48 font-bold text-3xl hover:from-pink-500 hover:to-yellow-500'
         onClick={reset}>
           Reset
         </button>
@@ -78,7 +95,7 @@ const reset=()=>{
      
     </div>
 
-  </section>
+ 
    
   )
 }
