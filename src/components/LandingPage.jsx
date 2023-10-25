@@ -20,7 +20,7 @@ const LandingPage = () => {
         {/* <div className='justify-center  items-center mx-auto '>
             <img
             className='justify-center items-center border-none rounded-md object-fit'
-            src="src/assets/stopwatch.png" alt="" />
+            src="/static/images/stopwatch.png" alt="" />
         </div> */}
 
         <div className='h-12 w-1/2 hover:from-pink-500 hover:to-yellow-500 cursor-pointer mt-20
