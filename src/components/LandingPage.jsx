@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
 
     
-<div className='mx-auto w-1/3  pb-10  
+<div className='mx-auto w-1/3  pb-10 mt-4 
     flex flex-col bg-gradient-to-r from-sky-500 to-indigo-500  
     text-gradient-to-r from-sky-500 to-indigo-500 
      shadow-md boreder-2 border-white-900 
