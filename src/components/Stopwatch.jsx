@@ -72,12 +72,12 @@ const reset=()=>{
        
       </div>
       
-      <div className="  gap-4 mx-auto  mt-20  sm:pl-20  " >
+      <div className="flex gap-4 mx-auto mt-20    " >
   
         <button
          className=" p-2 border-2 rounded-md
          bg-gradient-to-r from-sky-500 to-indigo-500 
-         border-blue-300 w-48 font-bold text-3xl hover:from-pink-500 hover:to-yellow-500 sm:mb-4 mr-4"  
+         border-blue-300 w-48 font-bold text-3xl hover:from-pink-500 hover:to-yellow-500 mr-4"  
          onClick={startStop}>
           {isActive ? "Stop": "Start"}
         </button>
